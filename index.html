@@ -5,21 +5,19 @@
 		<title>
 			Desnadify
 		</title>
-		<!-- Latest compiled and minified CSS -->
-		<link rel="stylesheet" href="css/bootstrap.min.css">
-
-		<!-- Optional theme -->
-		<link rel="stylesheet" href="css/bootstrap-theme.min.css">
 	</head>
 
 	<body style="background-color: #4285f4">
-		<div class="container-fluid">
-		</div>
+		<div class='printchatbox' id='printchatbox'></div>
 
-		<script src="js/jquery.min.js"></script>
+		<input type='text' name='fname' class='chatinput' id='chatinput'>
 
-		<!-- Latest compiled and minified JavaScript -->
-		<script src="js/bootstrap.min.js"></script>
+		<script type="text/javascript">
+			var inputBox = document.getElementById('chatinput');
 
+			inputBox.onkeyup = function(){
+			    document.getElementById('printchatbox').innerHTML = inputBox.value;
+			}
+		</script>
 	</body>
 </html>
