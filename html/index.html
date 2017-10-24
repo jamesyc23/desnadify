@@ -5,18 +5,22 @@
 		<title>
 			Desnadify
 		</title>
+
+		<link rel="stylesheet" type="text/css" href="../css/main.css">
 	</head>
 
-	<body style="background-color: #4285f4">
-		<div class='printchatbox' id='printchatbox'></div>
+	<body>
+		<center>
+			<input type="text" class="input" autofocus="autofocus" id="initialinput">
 
-		<input type='text' name='fname' class='chatinput' id='chatinput'>
-
+			<div class="wordbox" id="wordbox1"></div>
+		</center>
+		
 		<script type="text/javascript">
-			var inputBox = document.getElementById('chatinput');
+			var inputBox = document.getElementById("initialinput");
 
 			inputBox.onkeyup = function(){
-			    document.getElementById('printchatbox').innerHTML = inputBox.value;
+			    document.getElementById("wordbox1").innerHTML = inputBox.value;
 			}
 		</script>
 	</body>
