@@ -7,21 +7,19 @@
 		</title>
 
 		<link rel="stylesheet" type="text/css" href="../css/main.css">
+
+		<script type="text/javascript" src="../js/jquery.min.js"></script>
 	</head>
 
 	<body>
 		<center>
-			<input type="text" class="input" autofocus="autofocus" id="initialinput">
-
-			<div class="wordbox" id="wordbox1"></div>
+			<input type="text" class="input" autofocus="autofocus" id="inputbox">
+			
+			<br>
+			
+			<div class="wordbox" id="wordbox1"></div>			
 		</center>
-		
-		<script type="text/javascript">
-			var inputBox = document.getElementById("initialinput");
 
-			inputBox.onkeyup = function(){
-			    document.getElementById("wordbox1").innerHTML = inputBox.value;
-			}
-		</script>
+		<script type="text/javascript" src="../js/main.js"></script>
 	</body>
 </html>
