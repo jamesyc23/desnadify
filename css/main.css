@@ -16,7 +16,7 @@ body {
 	width: 100%;
 }
 
-.wordbox {
+.word_box {
 	background-color: #dddddd;
 	border-style: solid; border-color: #bbbbbb; border-radius: 2px;
 	color: #4285f4;
@@ -24,10 +24,7 @@ body {
 	font-family: arial,sans-serif; font-weight: bold; font-size: 20px;
 	margin: auto;
 	padding: 11px 11px 11px 11px;
-	position: relative;
+	position: absolute;
 	text-align: center;
-}
-
-#wordbox1 {
-	top: 200px;
+	transform: translate(-50%, 0);
 }
